@@ -1,0 +1,124 @@
+//  GRIDS/ RESPONSIVE UTILS
+.grid{
+  .mx-clearfix();
+  width:85%;
+  margin:0 auto;
+}
+.grid-span{
+  .mx-clearfix();
+  .mx-margin-reset();
+  .mx-light-differ();
+  width:100%;
+}
+.row{
+  .mx-clearfix();
+  margin-left:(@gutter-width/-2);
+  margin-right:(@gutter-width/-2);
+  margin-top:(@padding-base-ver/2);
+  margin-bottom:(@padding-base-ver/2);
+}
+//	Responsive Utilities
+.mx-loop-sm(@columns,span-xs);
+.mx-loop(@columns,span-sm,@scr-sm-min);
+.mx-loop(@columns,span-md,@scr-md-min);
+.mx-loop(@columns,span-lg,@scr-lg-min);
+.show-xs-block{
+  display:block;
+  @media(min-width:~"@{scr-xs-max}"){
+    display:none;
+  }
+}
+.show-sm-block{
+  display:none;
+  @media(min-width:~"@{scr-sm-min}")
+    and (max-width:~"@{scr-sm-max}"){
+      display:block;
+    }
+}
+.show-md-block{
+  display:none;
+  @media(min-width:~"@{scr-md-min}")
+    and (max-width:~"@{scr-md-max}"){
+      display:block;
+    }
+}
+.show-lg-block{
+  display:none;
+  @media(min-width:~"@{scr-lg-min}"){
+    display:block;
+  }
+}
+.show-xs-inline-block{
+  display:inline-block;
+  @media(min-width:~"@{scr-xs-max}"){
+    display:none;
+  }
+}
+.show-sm-inline-block{
+  display:none;
+  @media(min-width:~"@{scr-sm-min}")
+    and (max-width:~"@{scr-sm-max}"){
+      display:inline-block;
+    }
+}
+.show-md-inline{
+  display:none;
+  @media(min-width:~"@{scr-md-min}")
+    and (max-width:~"@{scr-md-max}"){
+      display:inline;
+    }
+}
+.show-lg-inline{
+  display:none;
+  @media(min-width:~"@{scr-lg-min}"){
+    display:inline;
+  }
+}
+.show-xs-inline{
+  display:inline;
+  @media(min-width:~"@{scr-xs-max}"){
+    display:none;
+  }
+}
+.show-sm-inline{
+  display:none;
+  @media(min-width:~"@{scr-sm-min}")
+    and (max-width:~"@{scr-sm-max}"){
+      display:inline;
+    }
+}
+.show-md-inline{
+  display:none;
+  @media(min-width:~"@{scr-md-min}")
+    and (max-width:~"@{scr-md-max}"){
+      display:inline;
+    }
+}
+.show-lg-inline{
+  display:none;
+  @media(min-width:~"@{scr-lg-min}"){
+    display:inline;
+  }
+}
+.hide-xs{
+  @media(max-width:~"@{scr-xs-max}"){
+    display:none;
+  }
+}
+.hide-sm{
+  @media(min-width:~"@{scr-sm-min}")
+    and (max-width:~"@{scr-sm-max}"){
+      display:none;
+    }
+}
+.hide-md{
+  @media(min-width:~"@{scr-md-min}")
+    and (max-width:~"@{scr-md-max}"){
+      display:none;
+    }
+}
+.hide-lg{
+  @media(min-width:~"@{scr-lg-min}"){
+    display:none;
+  }
+}

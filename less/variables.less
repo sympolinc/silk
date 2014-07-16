@@ -1,0 +1,83 @@
+//	VARIABLES
+@gray:#bcbcbc;
+@gray-dark:darken(@gray,12%);
+@gray-darker:darken(@gray,20%);
+@gray-light:lighten(@gray,12%);
+@gray-lighter:lighten(@gray,20%);
+@clr-primary:#0069b4;
+@clr-success:#47AD67;
+@clr-warning:#EDD449;
+@clr-error:#E24D4A;
+@clr-info:#60BAF2;
+//	Global
+@body-bg:#fefffe;
+@font-color:#3a3a3a;
+@link-color:@clr-primary;
+@link-active-color:darken(@link-color,15%);
+@white:@body-bg;
+@black:@font-color;
+//	Typography
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
+@font-family-sans:'Open Sans', sans-serif;
+@font-family-serif:Georgia, "Times New Roman", Times, serif;
+@font-family-mono:Menlo, Monaco, Consolas, "Courier New", monospace;
+@base-font-family:@font-family-sans;
+@font-size-base:14px;
+@font-size-large:ceil((@font-size-base*1.25));
+@font-size-small:ceil((@font-size-base*0.85));
+@font-h1:ceil((@font-size-base*2.0390625));
+@font-h2:ceil((@font-size-base*1.659375));
+@font-h3:ceil((@font-size-base*1.40625));
+@font-h4:ceil((@font-size-base*1.2375));
+@font-h5:ceil((@font-size-base*1.125));
+@font-h6:ceil((@font-size-base*1.05));
+@line-height:1.5;
+@line-height-computed:@font-size-base*@line-height;
+@heading-font-family:inherit;
+@heading-font-weight:700;
+@heading-line-height:1.2;
+@heading-color:inherit;
+//	Grid System
+@scr-lg-min:1200px;
+@scr-md-max:(@scr-lg-min - 1);
+@scr-md-min:992px;
+@scr-sm-max:(@scr-md-min - 1);
+@scr-sm-min:768px;
+@scr-xs-max:(@scr-sm-min - 1);
+@gutter-width:20px;
+@columns:12;
+@grid-breakpoint:@scr-sm-min;
+@grid-breakpoint-max:(@scr-sm-min - 1);
+// Type
+@text-muted:@gray-light;
+@abbr-border:@gray-light;
+@heading-sub-color:@gray;
+@blockquote-footer-color:@gray-light;
+@blockquote-font-size:(@font-size-base*1.15);
+@blockquote-border:@gray-lighter;
+@header-border:@gray-lighter;
+@hr-border:@gray-lighter;
+@hor-offset:175px;
+//	Components
+@border-radius-base:5px;
+@border-radius-sm:2px;
+@border-radius-lg:7px;
+@padding-base-ver:5px;
+@padding-base-hor:10px;
+@padding-lg-ver:10px;
+@padding-lg-hor:15px;
+@padding-sm-ver:3px;
+@padding-sm-hor:8px;
+@padding-xs-ver:1px;
+@padding-xs-hor:5px;
+@line-height-lg:1.2;
+@line-height-sm:1.5;
+//  Code
+@code-color:#45ace0;
+@code-bg:#dbf3ff;
+@kbd-color:@body-bg;
+@kbd-bg:@font-color;
+@pre-color:#6f6f6f;
+@pre-bg:#f9f9f9;
+@pre-border-color:#dddddd;
+@pre-max-height:350px;

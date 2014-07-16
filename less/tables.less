@@ -1,0 +1,52 @@
+//  TABLES
+th{
+  text-align:left;
+}
+.tbl{
+  >caption{
+    color:@gray;
+    font-size:@font-size-large;
+    border-top:1px solid @gray;
+    border-bottom:1px solid @gray;
+  }
+  margin-top: @line-height-computed/2;
+  margin-bottom: @line-height-computed/2;
+  width:100%;
+  max-width:100%;
+  background-color:transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  >thead,>tbody{
+    >tr{
+      >th,>td{
+        border-bottom:1px solid @gray-lighter;
+        vertical-align:bottom;
+        padding:@padding-xs-hor;
+        line-height: @line-height;
+      }
+      &.alt{
+        >td{
+          background:@gray-lighter;
+        }
+      }
+    }
+  }
+  >tfoot{
+    >tr{
+      >th,>td{
+        vertical-align:bottom;
+        padding:@padding-xs-hor;
+        line-height: @line-height;
+      }
+    }
+  }
+}
+.tbl-striped{
+  >tbody{
+    >tr:nth-child(odd){
+      >td{
+        background:@gray-lighter;
+      }
+    }
+  }
+}
